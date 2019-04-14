@@ -1,0 +1,40 @@
+{
+  "name": "semantic-accessible-component-library",
+  "version": "1.0.0",
+  "description": "Collection of sematic, accessible components that are fully independant and reusable",
+  "main": "index.js",
+  "author": "Liam Raven <liamraven@gmail.com>",
+  "license": "ISC",
+  "workspaces": [
+    "components/*"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@storybook/addon-info": "^5.0.3",
+    "@storybook/addon-knobs": "^5.0.3",
+    "@storybook/react": "^5.0.3",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "eslint": "^5.15.3",
+    "fast-lorem-ipsum": "^1.2.0",
+    "lerna": "^3.13.1",
+    "node-sass": "^4.11.0",
+    "prettier": "^1.16.4",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1"
+  },
+  "dependencies": {
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "scripts": {
+    "precommit": "lint-staged && npm run test",
+    "prettier": "prettier --config ./.prettierrc --write",
+    "lint": "eslint components",
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "build": "lerna run build",
+    "prerelease": "npm run lint && npm run test",
+    "release": "npm run prerelease && lerna publish",
+    "test": "jest"
+  }
+}
