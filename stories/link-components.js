@@ -10,5 +10,5 @@ stories.add('basic', () => {
 
     return (
         <BorderArrowLink>Full Article</BorderArrowLink>
-    )
+    );
 });

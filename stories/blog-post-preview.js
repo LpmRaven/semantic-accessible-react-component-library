@@ -18,7 +18,7 @@ stories.add('basic', () => {
             articleTitle={articleTitle}
             articleContent={articleContent}
         />
-    )
+    );
 });
 
 stories.add('with link', () => {
@@ -33,5 +33,5 @@ stories.add('with link', () => {
             linkComponent={linkComponent}
         >
         </BlogPostPreview>
-    )
+    );
 });

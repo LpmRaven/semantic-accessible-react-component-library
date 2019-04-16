@@ -14,5 +14,5 @@ stories.add('with color options', () => {
             textColor={textColor}
             backgroundColor={backgroundColor}
         />
-    )
+    );
 });
