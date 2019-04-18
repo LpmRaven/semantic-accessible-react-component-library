@@ -10,6 +10,7 @@ function loadStories() {
     require('../stories/banner-text-only.js');
     require('../stories/blog-post-preview.js');
     require('../stories/link-components.js');
+    require('../stories/social-media-boxes.js');
     // You can require as many stories as you need.
 }
 

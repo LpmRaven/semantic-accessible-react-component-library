@@ -37,6 +37,11 @@
     "item5 item5 item6 item6";
 }
 
+.c-social-media-boxes__grid-item {
+  list-style: none;
+  display: grid;
+}
+
 .c-social-media-boxes__grid-item--1 {
   grid-area: item1;
 }
@@ -59,4 +64,63 @@
 
 .c-social-media-boxes__grid-item--6 {
   grid-area: item6;
+}
+
+.c-social-media-boxes__link {
+  background-color: transparent;
+  color: inherit;
+  padding: 0.8em;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-width: 10px;
+  border-style: solid;
+  border-image-slice: 50%;
+  border-image-width: 2.5em;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.c-social-media-boxes__instagram {
+  background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  border-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: linear-gradient(150deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  }
+}
+
+.c-social-media-boxes__facebook {
+  background-image: linear-gradient(-135deg, #3b5998, #2b4170);
+  border-image: linear-gradient(-135deg, #3b5998, #2b4170);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: linear-gradient(-150deg, #2b4170, #3b5998);
+  }
+}
+
+.c-social-media-boxes__linkedin {
+  background-image: linear-gradient(45deg, #009cda, #0073b2);
+  border-image: linear-gradient(45deg, #009cda, #0073b2);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: linear-gradient(150deg, #009cda, #0073b2);
+  }
+}
+
+.c-social-media-boxes__twitter {
+}
+
+.c-social-media-boxes__youtube {
 }

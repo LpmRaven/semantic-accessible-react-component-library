@@ -7,10 +7,35 @@ import SocialMediaBoxes from '../components/social-media-boxes';
 const stories = storiesOf('social-media-boxes', module);
 
 stories.add('Instagram default', () => {
-
     return (
         <SocialMediaBoxes
             instagramLink="https://www.instagram.com/"
+        />
+    );
+});
+
+stories.add('Facebook default', () => {
+    return (
+        <SocialMediaBoxes
+            facebookLink="https://www.facebook.com/"
+        />
+    );
+});
+
+stories.add('LinkedIn default', () => {
+    return (
+        <SocialMediaBoxes
+            linkedinLink="https://www.linkedin.com/"
+        />
+    );
+});
+
+stories.add('All Social Media default', () => {
+    return (
+        <SocialMediaBoxes
+            facebookLink="https://www.facebook.com/"
+            instagramLink="https://www.instagram.com/"
+            linkedinLink="https://www.linkedin.com/"
         />
     );
 });
