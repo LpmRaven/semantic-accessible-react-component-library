@@ -9,23 +9,23 @@
     "components/*"
   ],
   "devDependencies": {
-    "@babel/core": "^7.3.4",
-    "@storybook/addon-info": "^5.0.3",
-    "@storybook/addon-knobs": "^5.0.3",
-    "@storybook/react": "^5.0.3",
+    "@babel/core": "^7.4.3",
+    "@storybook/addon-info": "^5.0.10",
+    "@storybook/addon-knobs": "^5.0.10",
+    "@storybook/react": "^5.0.10",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.1",
-    "eslint": "^5.15.3",
+    "eslint": "^5.16.0",
     "fast-lorem-ipsum": "^1.2.0",
     "lerna": "^3.13.1",
     "node-sass": "^4.11.0",
-    "prettier": "^1.16.4",
+    "prettier": "^1.17.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1"
   },
   "dependencies": {
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "scripts": {
     "precommit": "lint-staged && npm run test",
