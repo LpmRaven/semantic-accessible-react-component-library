@@ -1,6 +1,6 @@
 {
     "name": "@lpmraven/link-components",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Link components, part of the semantic-accessible-react-component-library",
     "author": "Liam Raven <liamraven@gmail.com>",
     "main": "dist/index.js",
