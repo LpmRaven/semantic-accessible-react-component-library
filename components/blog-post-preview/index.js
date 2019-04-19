@@ -7,16 +7,16 @@ const getBadge = (newPost, badgeLabel) => {
             <span className="c-blog-post-preview__tag g-flex__item g-flex__item--no-grow g-flex__container--align-self-start">
                 New!
             </span>
-        )
+        );
     }
     if (badgeLabel) {
         return (
             <span className="c-blog-post-preview__tag g-flex__item g-flex__item--no-grow g-flex__container--align-self-start">
                 {badgeLabel}
             </span>
-        )
+        );
     }
-}
+};
 
 const BlogPostPreview = ({ articleTitle, articleContent, linkComponent, newPost, badgeLabel }) => {
     return (
@@ -42,9 +42,8 @@ const BlogPostPreview = ({ articleTitle, articleContent, linkComponent, newPost,
                     <div className="c-blog-post-preview__image" />
                 </div>
             </div>
-
         </article >
-    )
+    );
 };
 
 export default BlogPostPreview;

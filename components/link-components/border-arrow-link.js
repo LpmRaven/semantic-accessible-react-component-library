@@ -6,7 +6,7 @@ const BorderArrowLink = ({ children }) => {
         <a className="button e-link--border e-link--arrow">
             {children}
         </a>
-    )
+    );
 };
 
 

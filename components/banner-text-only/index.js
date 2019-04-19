@@ -10,7 +10,7 @@ const BannerTextOnly = ({ textColor, backgroundColor }) => {
                 <li className="g-grid__item g-grid__item--three c-banner-text-only__list-item">Independent reviews</li>
             </ul>
         </div>
-    )
+    );
 };
 
 export default BannerTextOnly;
