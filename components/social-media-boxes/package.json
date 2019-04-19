@@ -3,16 +3,10 @@
     "version": "0.1.0",
     "description": "Social media boxes component, part of the semantic-accessible-react-component-library",
     "author": "Liam Raven <liamraven@gmail.com>",
-    "main": "dist/index.js",
-    "module": "src/index.js",
+    "main": "dist/social-media-boxes.js",
     "files": [
-        "dist",
-        "src"
+        "dist/social-media-boxes.js"
     ],
-    "directories": {
-        "lib": "src"
-    },
-    "scripts": {},
     "peerDependencies": {
         "react": "^16.0.0",
         "react-dom": "^16.0.0"

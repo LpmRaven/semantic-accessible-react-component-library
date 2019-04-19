@@ -1,4 +1,7 @@
 {
   "useWorkspaces": true,
-  "version": "independent"
+  "version": "independent",
+  "packages": [
+    "components/*"
+  ]
 }
