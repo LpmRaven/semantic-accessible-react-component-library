@@ -1,5 +1,8 @@
 # Semantic Accessible React Component Library
 
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
+
+
 Preview existing components in the library at:
 
 ## Mission

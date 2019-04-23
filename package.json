@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "Liam Raven <liamraven@gmail.com>",
   "license": "ISC",
+  "private": true,
   "workspaces": [
     "components/*"
   ],
@@ -31,13 +32,12 @@
     "react-dom": "^16.8.6"
   },
   "scripts": {
-    "precommit": "lint-staged && npm run test",
+    "precommit": "lint-staged && yarn run test",
     "prettier": "prettier --config ./.prettierrc --write",
     "lint": "eslint components",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "release": "npm run prerelease && lerna publish",
-    "test": "",
-    "build": "babel components/* -d dist",
-    "prerelease": "npm run lint && npm run test && npm run build"
+    "release": "lerna bootstrap && lerna publish --contents dist && bit export lpmraven.semantic-accessible-react-component-library",
+    "build": "lerna run build",
+    "prerelease": "yarn run lint && yarn run build"
   }
 }

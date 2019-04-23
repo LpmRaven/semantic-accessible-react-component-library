@@ -28,7 +28,7 @@ const renderLink = (linkHref) => {
     const linkClass = `c-social-media-boxes__link c-social-media-boxes__${socialMediaType}`;
 
     return (
-        <a class={linkClass} href={linkHref}>{linkText}</a>
+        <a className={linkClass} href={linkHref}>{linkText}</a>
     );
 };
 
