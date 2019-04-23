@@ -1,6 +1,6 @@
 {
     "name": "@lpmraven/blog-post-preview",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "description": "Blog post preview component, part of the semantic-accessible-react-component-library",
     "author": "Liam Raven <liamraven.com>",
     "publishConfig": {
