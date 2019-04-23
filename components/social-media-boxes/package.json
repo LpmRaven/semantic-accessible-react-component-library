@@ -1,6 +1,6 @@
 {
     "name": "@lpmraven/social-media-boxes",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Social media boxes component, part of the semantic-accessible-react-component-library",
     "author": "Liam Raven <liamraven.com>",
     "main": "dist/index.js",
