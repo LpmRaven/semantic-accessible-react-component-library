@@ -49,11 +49,12 @@ const renderItems = (socialLinks) => {
 const SocialMediaBoxes = ({ noColumns, instagramLink, facebookLink, linkedinLink }) => {
     const allSocialLinks = [instagramLink, facebookLink, linkedinLink];
     const socialLinks = filterNull(allSocialLinks);
+    const noRows = Math.floor(socialLinks.length / noColumns);
 
-    let columnClass = "c-social-media-boxes__grid-columns--3";
-    if (noColumns) {
+    let columnClass = "c-social-media-boxes__grid-columns--3-1";
+    if (noColumns && noRows) {
         if (noColumns === 1 || noColumns === 2 || noColumns === 3 || noColumns === 4) {
-            columnClass = `c-social-media-boxes__grid-columns--${noColumns}`;
+            columnClass = `c-social-media-boxes__grid-columns--${noColumns}-${noRows}`;
         }
     }
 
