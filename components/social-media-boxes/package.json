@@ -17,5 +17,8 @@
     },
     "scripts": {
         "build": "babel src -d dist --ignore *.spec.js --copy-files"
+    },
+    "dependencies": {
+        "react-icons": "^3.6.1"
     }
 }

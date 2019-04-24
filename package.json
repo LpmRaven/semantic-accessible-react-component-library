@@ -36,7 +36,7 @@
     "prettier": "prettier --config ./.prettierrc --write",
     "lint": "eslint components",
     "storybook": "start-storybook -p 9001 -c .storybook",
-    "release": "lerna bootstrap && lerna version && lerna publish --contents dist from-package && bit export lpmraven.semantic-accessible-react-component-library",
+    "release": "lerna bootstrap && lerna version && lerna publish --contents dist from-package && bit add components/* && bit status && bit export lpmraven.semantic-accessible-react-component-library",
     "build": "lerna run build",
     "prerelease": "yarn run lint && yarn run build"
   }

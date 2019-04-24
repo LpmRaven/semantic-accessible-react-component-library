@@ -1,5 +1,5 @@
 import { configure, addParameters, addDecorator } from '@storybook/react';
-import theme from './theme';
+//import theme from './theme.js';
 import { themes } from '@storybook/theming';
 import { withInfo } from '@storybook/addon-info';
 import { withKnobs } from '@storybook/addon-knobs';

@@ -1,9 +1,19 @@
 import React from 'react';
 import './social-media-boxes.scss';
+import { IoLogoFacebook, IoLogoTwitter, IoLogoInstagram, IoLogoLinkedin, IoLogoYoutube } from 'react-icons/io';
+
 const filterNull = (array) => {
     return array.filter(function (el) {
         return el != null;
     });
+};
+
+const getSocialIcon = (socialMediaType) => {
+    if (socialMediaType === "instagram") return <IoLogoInstagram size={25} />;
+    if (socialMediaType === "facebook") return <IoLogoFacebook size={25} />;
+    if (socialMediaType === "linkedin") return <IoLogoLinkedin size={25} />;
+    if (socialMediaType === "twitter") return <IoLogoTwitter size={25} />;
+    if (socialMediaType === "youtube") return <IoLogoYoutube size={25} />;
 };
 
 const getLinkText = (socialMediaType) => {
@@ -28,7 +38,7 @@ const renderLink = (linkHref) => {
     const linkClass = `c-social-media-boxes__link c-social-media-boxes__${socialMediaType}`;
 
     return (
-        <a className={linkClass} href={linkHref}>{linkText}</a>
+        <a className={linkClass} href={linkHref}>{getSocialIcon(socialMediaType)}{linkText}</a>
     );
 };
 

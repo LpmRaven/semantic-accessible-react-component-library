@@ -5,5 +5,11 @@
     },
     "dependencies": {},
     "componentsDefaultDirectory": "components/{name}",
-    "packageManager": "npm"
+    "packageManager": "yarn",
+    "useWorkspaces": true,
+    "manageWorkspaces": true,
+    "dist": {
+        "entry": "src",
+        "target": "dist"
+    }
 }
