@@ -1,6 +1,6 @@
 {
     "name": "@lpmraven/banner-text-only",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "description": "Banner text only component, part of the semantic-accessible-react-component-library",
     "author": "Liam Raven <liamraven.com>",
     "publishConfig": {
