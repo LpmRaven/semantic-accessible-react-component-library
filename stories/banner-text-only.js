@@ -1,6 +1,6 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import Banner from '../components/banner-text-only';
+import Banner from '../components/banner-text-only/src';
 import { text, boolean, number, color } from '@storybook/addon-knobs';
 
 const stories = storiesOf('banner-text-only', module);

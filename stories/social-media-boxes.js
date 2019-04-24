@@ -2,7 +2,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { text, boolean, number, color } from '@storybook/addon-knobs';
 
-import SocialMediaBoxes from '../components/social-media-boxes';
+import SocialMediaBoxes from '../components/social-media-boxes/src';
 
 const stories = storiesOf('social-media-boxes', module);
 

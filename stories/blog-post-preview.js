@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react';
 import { text, boolean, number, color } from '@storybook/addon-knobs';
 import fastLoremIpsum from 'fast-lorem-ipsum';
 
-import BlogPostPreview from '../components/blog-post-preview';
-import BorderArrowLink from '../components/link-components/border-arrow-link';
+import BlogPostPreview from '../components/blog-post-preview/src';
+import BorderArrowLink from '../components/link-components/src/border-arrow-link';
 
 const stories = storiesOf('blog-post-preview', module);
 

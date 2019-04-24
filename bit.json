@@ -7,7 +7,6 @@
     "componentsDefaultDirectory": "components/{name}",
     "packageManager": "yarn",
     "useWorkspaces": true,
-    "manageWorkspaces": true,
     "dist": {
         "entry": "src",
         "target": "dist"
