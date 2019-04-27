@@ -1,6 +1,6 @@
 import React from 'react';
 import './social-media-boxes.scss';
-import { IoLogoFacebook, IoLogoTwitter, IoLogoInstagram, IoLogoLinkedin, IoLogoYoutube } from 'react-icons/io';
+import { IoLogoFacebook, IoLogoTwitter, IoLogoInstagram, IoLogoLinkedin, IoLogoYoutube, IoMdDownload } from 'react-icons/io';
 
 const filterNull = (array) => {
     return array.filter(function (el) {
@@ -9,11 +9,13 @@ const filterNull = (array) => {
 };
 
 const getSocialIcon = (socialMediaType) => {
-    if (socialMediaType === "instagram") return <IoLogoInstagram size={25} />;
-    if (socialMediaType === "facebook") return <IoLogoFacebook size={25} />;
-    if (socialMediaType === "linkedin") return <IoLogoLinkedin size={25} />;
-    if (socialMediaType === "twitter") return <IoLogoTwitter size={25} />;
-    if (socialMediaType === "youtube") return <IoLogoYoutube size={25} />;
+    if (socialMediaType === "instagram") return <IoLogoInstagram size={30} />;
+    if (socialMediaType === "facebook") return <IoLogoFacebook size={30} />;
+    if (socialMediaType === "linkedin") return <IoLogoLinkedin size={30} />;
+    if (socialMediaType === "twitter") return <IoLogoTwitter size={30} />;
+    if (socialMediaType === "youtube") return <IoLogoYoutube size={30} />;
+    if (socialMediaType === "cv-download") return <IoMdDownload size={30} />;
+
 };
 
 const getLinkText = (socialMediaType) => {
@@ -21,7 +23,7 @@ const getLinkText = (socialMediaType) => {
     if (socialMediaType === "facebook") return "Facebook";
     if (socialMediaType === "linkedin") return "LinkedIn";
     if (socialMediaType === "twitter") return "Twitter";
-    if (socialMediaType === "youtube") return "Youtube";
+    if (socialMediaType === "cv-download") return "Download CV";
 };
 
 const getSocialMediaType = (linkHref) => {
@@ -30,6 +32,7 @@ const getSocialMediaType = (linkHref) => {
     if (linkHref.includes("linkedin")) return "linkedin";
     if (linkHref.includes("twitter")) return "twitter";
     if (linkHref.includes("youtube")) return "youtube";
+    if (linkHref.includes("cv-download")) return "cv-download";
 };
 
 const renderLink = (linkHref) => {
@@ -56,12 +59,13 @@ const renderItems = (socialLinks) => {
     });
 };
 
-const SocialMediaBoxes = ({ noColumns, instagramLink, facebookLink, linkedinLink }) => {
-    const allSocialLinks = [instagramLink, facebookLink, linkedinLink];
+const SocialMediaBoxes = ({ numberOfColumns, instagramLink, facebookLink, linkedinLink, cvLink }) => {
+    const allSocialLinks = [instagramLink, facebookLink, linkedinLink, cvLink];
     const socialLinks = filterNull(allSocialLinks);
-    const noRows = Math.floor(socialLinks.length / noColumns);
+    const noColumns = numberOfColumns || socialLinks.length;
+    const noRows = Math.ceil(socialLinks.length / noColumns);
 
-    let columnClass = "c-social-media-boxes__grid-columns--3-1";
+    let columnClass = "";
     if (noColumns && noRows) {
         if (noColumns === 1 || noColumns === 2 || noColumns === 3 || noColumns === 4) {
             columnClass = `c-social-media-boxes__grid-columns--${noColumns}-${noRows}`;

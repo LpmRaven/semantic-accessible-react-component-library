@@ -134,10 +134,18 @@
   text-align: center;
   text-decoration: none;
   color: white;
-  border-width: 10px;
+  border-width: 5px;
   border-style: solid;
   border-image-slice: 50%;
   border-image-width: 2.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    padding-right: 0.5em;
+  }
 
   &:hover,
   &:focus,
@@ -184,4 +192,15 @@
 }
 
 .c-social-media-boxes__youtube {
+}
+
+.c-social-media-boxes__cv-download {
+  background-image: linear-gradient(45deg, #00da41, #00b24a);
+  border-image: linear-gradient(45deg, #00da41, #00b24a);
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: linear-gradient(150deg, #00da41, #00b24a);
+  }
 }
