@@ -9,12 +9,12 @@ const filterNull = (array) => {
 };
 
 const getSocialIcon = (socialMediaType) => {
-    if (socialMediaType === "instagram") return <IoLogoInstagram size={30} />;
-    if (socialMediaType === "facebook") return <IoLogoFacebook size={30} />;
-    if (socialMediaType === "linkedin") return <IoLogoLinkedin size={30} />;
-    if (socialMediaType === "twitter") return <IoLogoTwitter size={30} />;
-    if (socialMediaType === "youtube") return <IoLogoYoutube size={30} />;
-    if (socialMediaType === "cv-download") return <IoMdDownload size={30} />;
+    if (socialMediaType === "instagram") return <IoLogoInstagram size={35} />;
+    if (socialMediaType === "facebook") return <IoLogoFacebook size={35} />;
+    if (socialMediaType === "linkedin") return <IoLogoLinkedin size={35} />;
+    if (socialMediaType === "twitter") return <IoLogoTwitter size={35} />;
+    if (socialMediaType === "youtube") return <IoLogoYoutube size={35} />;
+    if (socialMediaType === "cv-download") return <IoMdDownload size={35} />;
 
 };
 
