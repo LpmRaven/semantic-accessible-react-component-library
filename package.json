@@ -17,7 +17,6 @@
     "@storybook/addon-info": "^5.0.10",
     "@storybook/addon-knobs": "^5.0.10",
     "@storybook/react": "^5.0.10",
-    "babel-core": "7.0.0-bridge.0",
     "babel-loader": "^8.0.5",
     "css-loader": "^2.1.1",
     "eslint": "^5.16.0",
@@ -26,7 +25,8 @@
     "node-sass": "^4.11.0",
     "prettier": "^1.17.0",
     "sass-loader": "^7.1.0",
-    "style-loader": "^0.23.1"
+    "style-loader": "^0.23.1",
+    "webpack": "^4.30.0"
   },
   "dependencies": {
     "react": "^16.8.6",
