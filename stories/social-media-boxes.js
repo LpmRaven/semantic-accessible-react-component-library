@@ -38,6 +38,18 @@ stories.add('CV default', () => {
     );
 });
 
+stories.add('All Social Media default colored', () => {
+    return (
+        <SocialMediaBoxes
+            facebookLink="https://www.facebook.com/"
+            instagramLink="https://www.instagram.com/"
+            linkedinLink="https://www.linkedin.com/"
+            cvLink="https://www.website.com/my-cv-download"
+            coloredLink={true}
+        />
+    );
+});
+
 stories.add('All Social Media default', () => {
     return (
         <SocialMediaBoxes

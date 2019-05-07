@@ -35,31 +35,31 @@ const getSocialMediaType = (linkHref) => {
     if (linkHref.includes("cv-download")) return "cv-download";
 };
 
-const renderLink = (linkHref) => {
+const renderLink = (linkHref, coloredLink) => {
     const socialMediaType = getSocialMediaType(linkHref);
     const linkText = getLinkText(socialMediaType);
-    const linkClass = `c-social-media-boxes__link c-social-media-boxes__${socialMediaType}`;
+    const linkClass = coloredLink ? `c-social-media-boxes__link c-social-media-boxes__${socialMediaType} c-social-media-boxes__${socialMediaType}--borders` : `c-social-media-boxes__link c-social-media-boxes__${socialMediaType} c-social-media-boxes__link--plain`;
 
     return (
         <a className={linkClass} href={linkHref}>{getSocialIcon(socialMediaType)}{linkText}</a>
     );
 };
 
-const renderItems = (socialLinks) => {
+const renderItems = (socialLinks, coloredLink) => {
     return socialLinks.map((linkHref, index) => {
         const itemClass = `c-social-media-boxes__grid-item c-social-media-boxes__grid-item--${index + 1}`;
 
         if (linkHref) {
             return (
                 <li className={itemClass}>
-                    {renderLink(linkHref)}
+                    {renderLink(linkHref, coloredLink)}
                 </li>
             );
         }
     });
 };
 
-const SocialMediaBoxes = ({ numberOfColumns, instagramLink, facebookLink, linkedinLink, cvLink }) => {
+const SocialMediaBoxes = ({ numberOfColumns, instagramLink, facebookLink, linkedinLink, cvLink, coloredLink }) => {
     const allSocialLinks = [instagramLink, facebookLink, linkedinLink, cvLink];
     const socialLinks = filterNull(allSocialLinks);
     const noColumns = numberOfColumns || socialLinks.length;
@@ -74,7 +74,7 @@ const SocialMediaBoxes = ({ numberOfColumns, instagramLink, facebookLink, linked
 
     return (
         <ul className={`c-social-media-boxes__grid ${columnClass}`}>
-            {renderItems(socialLinks)}
+            {renderItems(socialLinks, coloredLink)}
         </ul>
     );
 };

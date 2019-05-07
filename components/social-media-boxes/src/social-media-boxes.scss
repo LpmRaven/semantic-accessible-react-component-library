@@ -157,7 +157,6 @@
 
 .c-social-media-boxes__instagram {
   background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-  border-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 
   &:hover,
   &:focus,
@@ -166,9 +165,12 @@
   }
 }
 
+.c-social-media-boxes__instagram--borders {
+  border-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
 .c-social-media-boxes__facebook {
   background-image: linear-gradient(-135deg, #3b5998, #2b4170);
-  border-image: linear-gradient(-135deg, #3b5998, #2b4170);
 
   &:hover,
   &:focus,
@@ -177,9 +179,12 @@
   }
 }
 
+.c-social-media-boxes__facebook--borders {
+  border-image: linear-gradient(-135deg, #3b5998, #2b4170);
+}
+
 .c-social-media-boxes__linkedin {
   background-image: linear-gradient(45deg, #009cda, #0073b2);
-  border-image: linear-gradient(45deg, #009cda, #0073b2);
 
   &:hover,
   &:focus,
@@ -188,19 +193,37 @@
   }
 }
 
+.c-social-media-boxes__linkedin--borders {
+  border-image: linear-gradient(45deg, #009cda, #0073b2);
+}
+
 .c-social-media-boxes__twitter {
+}
+
+.c-social-media-boxes__twitter--borders {
 }
 
 .c-social-media-boxes__youtube {
 }
 
+.c-social-media-boxes__youtube--borders {
+}
+
 .c-social-media-boxes__cv-download {
   background-image: linear-gradient(45deg, #00da41, #00b24a);
-  border-image: linear-gradient(45deg, #00da41, #00b24a);
 
   &:hover,
   &:focus,
   &:active {
     background-image: linear-gradient(150deg, #00da41, #00b24a);
   }
+}
+
+.c-social-media-boxes__cv-download--borders {
+  border-image: linear-gradient(45deg, #00da41, #00b24a);
+}
+
+.c-social-media-boxes__link--plain {
+  background-image: linear-gradient(45deg, rgb(34, 94, 170) 0%, rgb(119, 200, 190) 200%);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1);
 }
