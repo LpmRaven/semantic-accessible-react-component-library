@@ -38,7 +38,7 @@ const getSocialMediaType = (linkHref) => {
 const renderLink = (linkHref, coloredLink) => {
     const socialMediaType = getSocialMediaType(linkHref);
     const linkText = getLinkText(socialMediaType);
-    const linkClass = coloredLink ? `c-social-media-boxes__link c-social-media-boxes__${socialMediaType} c-social-media-boxes__${socialMediaType}--borders` : `c-social-media-boxes__link c-social-media-boxes__${socialMediaType} c-social-media-boxes__link--plain`;
+    const linkClass = coloredLink ? `c-social-media-boxes__link c-social-media-boxes__link--borders c-social-media-boxes__${socialMediaType} c-social-media-boxes__${socialMediaType}--borders` : `c-social-media-boxes__link c-social-media-boxes__${socialMediaType} c-social-media-boxes__link--plain`;
 
     return (
         <a className={linkClass} href={linkHref}>{getSocialIcon(socialMediaType)}{linkText}</a>
