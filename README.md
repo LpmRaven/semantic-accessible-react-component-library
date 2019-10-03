@@ -31,6 +31,8 @@ Note: Each component is exported as its own NPM repo.
 
 ### Publish Components to NPM
 
+```yarn run build```
+
 ```lerna bootstrap```
 
 ```lerna publish```
