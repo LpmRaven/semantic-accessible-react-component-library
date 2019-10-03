@@ -100,7 +100,7 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "lpmraven.semantic-accessible-react-component-library/social-media-boxes@1.0.4": {
+    "lpmraven.semantic-accessible-react-component-library/social-media-boxes@1.0.5": {
         "files": [
             {
                 "relativePath": "components/social-media-boxes/index.js",
