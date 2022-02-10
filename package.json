@@ -22,7 +22,7 @@
     "eslint": "^5.16.0",
     "fast-lorem-ipsum": "^1.2.0",
     "lerna": "^3.13.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "prettier": "^1.17.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
